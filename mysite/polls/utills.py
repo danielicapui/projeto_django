@@ -10,7 +10,7 @@ def selectChoice(request,question):
         # mostrar o form atualizado
         return render(request, 'polls/detail.html', {
             'question': question,
-            'error_message': "You didn't select a choice.",
+            'error_message': "Você não escolheu uma opção!",
         })
     else:
         selected_choice.votes += 1
