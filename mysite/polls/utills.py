@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from .models import Choice, Question
 
-def selectChoice(question):
+def selectChoice(request,question):
     try:
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
