@@ -12,9 +12,9 @@ def create_question(question_text, days):
     return Question.objects.create(question_text=question_text, pub_date=time)
 
 """Boas praticas de test:
-    #um “TestClass” separado para cada modelo ou view
-    #um método de teste separado para cada conjunto de condições que você quer testar
-    #nomes de métodos de teste que descrevem a sua função
+    #um “TestClass” separado para cada modelo ou view.
+    #um método de teste separado para cada conjunto de condições que você quer testar.
+    #nomes de métodos de teste que descrevem a sua função.
 """
 class QuestionIndexViewTests(TestCase):
     def test_no_questions(self):
