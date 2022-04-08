@@ -1,1 +1,1 @@
-# projetct_django
+# Primeiros passos com django
